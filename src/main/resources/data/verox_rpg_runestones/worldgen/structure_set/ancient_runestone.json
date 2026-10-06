@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "verox_rpg_runestones:ancient_runestone",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 48,
+    "separation": 24,
+    "salt": 718293645
+  }
+}

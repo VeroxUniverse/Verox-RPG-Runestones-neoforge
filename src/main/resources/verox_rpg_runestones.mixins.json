@@ -4,13 +4,9 @@
   "package": "net.veroxuniverse.verox_rpg_runestones.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-  ],
-  "client": [
+    "JigsawPlacerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
   }
 }

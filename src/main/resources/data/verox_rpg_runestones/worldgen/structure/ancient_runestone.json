@@ -1,0 +1,15 @@
+{
+  "type": "verox_rpg_runestones:dry_land_jigsaw",
+  "biomes": "#verox_rpg_runestones:has_structure/ancient_runestone",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "beard_thin",
+  "start_pool": "verox_rpg_runestones:ancient_runestone/start",
+  "size": 1,
+  "start_height": {
+    "absolute": 0
+  },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "max_distance_from_center": 80,
+  "use_expansion_hack": false
+}

@@ -366,7 +366,7 @@ public final class RunestoneService {
     }
 
     public static boolean canRename(ServerPlayer player, RunestoneEntry entry) {
-        return entry.owner().equals(player.getUUID()) || entry.owner().equals(Util.NIL_UUID) || player.hasPermissions(2);
+        return entry.owner().equals(player.getUUID()) || player.isCreative() || player.hasPermissions(2);
     }
 
     private static void discover(ServerPlayer player, RunestoneEntry entry, boolean notify) {
@@ -409,7 +409,7 @@ public final class RunestoneService {
         if (player.isCreative() || player.hasPermissions(2)) return true;
         boolean owner = entry.owner().equals(player.getUUID());
         if (entry.global()) return owner && RunestonesConfig.PLAYERS_CAN_SET_GLOBAL.get();
-        return owner || entry.owner().equals(Util.NIL_UUID);
+        return owner;
     }
 
     private record Destination(Vec3 pos, float yaw) {}

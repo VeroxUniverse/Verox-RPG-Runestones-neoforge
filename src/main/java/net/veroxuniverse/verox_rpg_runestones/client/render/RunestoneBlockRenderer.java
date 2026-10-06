@@ -10,6 +10,7 @@ public class RunestoneBlockRenderer extends GeoBlockRenderer<RunestoneBlockEntit
 
     public RunestoneBlockRenderer() {
         super(new RunestoneGeoModel<>());
+        this.addRenderLayer(new RunestoneDormantLayer(this));
         this.addRenderLayer(new RunestoneGlowLayer(this));
     }
 

@@ -12,6 +12,7 @@ import net.veroxuniverse.verox_rpg_runestones.registry.ModBlockEntities;
 import net.veroxuniverse.verox_rpg_runestones.registry.ModBlocks;
 import net.veroxuniverse.verox_rpg_runestones.registry.ModCreativeTabs;
 import net.veroxuniverse.verox_rpg_runestones.registry.ModItems;
+import net.veroxuniverse.verox_rpg_runestones.registry.ModStructures;
 import org.slf4j.Logger;
 
 @Mod(RPGRunestones.MOD_ID)
@@ -27,6 +28,8 @@ public class RPGRunestones {
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
         ModAttachments.ATTACHMENT_TYPES.register(modEventBus);
         ModCreativeTabs.TABS.register(modEventBus);
+        ModStructures.STRUCTURE_TYPES.register(modEventBus);
+        ModStructures.POOL_ELEMENT_TYPES.register(modEventBus);
     }
 
     public static ResourceLocation id(String path) {

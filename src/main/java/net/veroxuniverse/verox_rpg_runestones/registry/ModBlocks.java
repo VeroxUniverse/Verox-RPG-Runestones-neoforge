@@ -18,7 +18,8 @@ public final class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .lightLevel(state -> 7)
                     .pushReaction(PushReaction.BLOCK)
-                    .noOcclusion()));
+                    .noOcclusion()
+                    .forceSolidOn()));
 
     private ModBlocks() {}
 }

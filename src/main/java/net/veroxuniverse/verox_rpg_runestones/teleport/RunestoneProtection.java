@@ -32,10 +32,15 @@ public final class RunestoneProtection {
 
         BlockPos lower = state.getValue(RunestoneBlock.HALF) == DoubleBlockHalf.UPPER ? event.getPos().below() : event.getPos();
         Optional<RunestoneEntry> entry = RunestoneRegistry.get(level.getServer()).findAt(level.dimension(), lower);
-        if (entry.isPresent() && !RunestoneService.canBreak(player, entry.get())) {
+        boolean allowed = entry.map(found -> RunestoneService.canBreak(player, found)).orElseGet(() -> canBreakNatural(player));
+        if (!allowed) {
             event.setCanceled(true);
             player.displayClientMessage(Component.translatable("message." + RPGRunestones.MOD_ID + ".protected").withStyle(ChatFormatting.RED), true);
         }
+    }
+
+    private static boolean canBreakNatural(ServerPlayer player) {
+        return !RunestonesConfig.PROTECT_RUNESTONES.get() || player.isCreative() || player.hasPermissions(2);
     }
 
     @SubscribeEvent
