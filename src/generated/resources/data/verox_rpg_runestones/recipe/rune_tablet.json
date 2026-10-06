@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "verox_rpg_runestones:rune_dust"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "S": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "pattern": [
+    "EDE",
+    "DSD",
+    "EDE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "verox_rpg_runestones:rune_tablet"
+  }
+}

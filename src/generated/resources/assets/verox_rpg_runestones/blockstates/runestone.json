@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=east,half=lower": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=east,half=upper": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=north,half=lower": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=north,half=upper": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=south,half=lower": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=south,half=upper": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=west,half=lower": {
+      "model": "verox_rpg_runestones:block/runestone"
+    },
+    "facing=west,half=upper": {
+      "model": "verox_rpg_runestones:block/runestone"
+    }
+  }
+}

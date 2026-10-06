@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_stone"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "verox_rpg_runestones:rune_tablet"
+    }
+  },
+  "pattern": [
+    "#A#",
+    "ADA",
+    "#A#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "verox_rpg_runestones:runestone"
+  }
+}

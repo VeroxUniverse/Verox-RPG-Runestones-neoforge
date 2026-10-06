@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "D": {
+      "item": "verox_rpg_runestones:rune_dust"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "F": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "pattern": [
+    " C ",
+    "DED",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "verox_rpg_runestones:soul_anchor"
+  }
+}

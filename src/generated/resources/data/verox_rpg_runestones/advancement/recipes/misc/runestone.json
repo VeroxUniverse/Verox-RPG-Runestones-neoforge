@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rune_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "verox_rpg_runestones:rune_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "verox_rpg_runestones:runestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rune_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "verox_rpg_runestones:runestone"
+    ]
+  }
+}
